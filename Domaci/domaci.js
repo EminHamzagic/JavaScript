@@ -146,8 +146,52 @@
 
 
 
-str = 'Hello'
 
-a = str.substr(0, str.length - 1)
 
-console.log(a)
+happy_nums = []
+
+// num = 1
+
+// while (happy_nums.length <= 5){
+//     new_num = num
+//     for (i = 0; i < String(new_num).length){
+
+//     }
+// }
+
+
+
+
+
+
+new_num = 0
+
+start = 4
+
+brojevi = 1
+
+while(true){
+    if (happy_nums.length === 5){
+        break
+    }
+    num = brojevi
+    while(true){
+        for (j = 0; j < String(num).length; j++){
+            new_num += parseInt(String(num)[j]) ** 2
+        }
+        if (new_num === 1){
+            happy_nums.push(brojevi)
+            new_num = 0
+            break
+        }
+        else if(new_num === start){
+            new_num = 0
+            break
+        }
+        num = new_num
+        new_num = 0
+    }
+    brojevi++
+}
+
+console.log(happy_nums)
