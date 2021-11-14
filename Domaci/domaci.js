@@ -145,24 +145,12 @@
 // console.log(zbir)
 
 
-
-
-
+        
+        
+        
+        
+        
 happy_nums = []
-
-// num = 1
-
-// while (happy_nums.length <= 5){
-//     new_num = num
-//     for (i = 0; i < String(new_num).length){
-
-//     }
-// }
-
-
-
-
-
 
 new_num = 0
 
@@ -170,8 +158,11 @@ start = 4
 
 brojevi = 1
 
+// limit = 5
+limit = parseInt(prompt('Unesite koliko happy numbera zelite da dobijete:'))
+
 while(true){
-    if (happy_nums.length === 5){
+    if (happy_nums.length === limit){
         break
     }
     num = brojevi
