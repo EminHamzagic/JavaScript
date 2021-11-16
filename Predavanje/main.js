@@ -321,30 +321,94 @@
 
 
 
-broj = Math.floor(Math.random() * (20 - 1) + 1)
+// broj = Math.floor(Math.random() * (20 - 1) + 1)
 
-br_pokusaja = 5
+// br_pokusaja = 5
 
-while (true){
-    pokusaj = parseInt(prompt('Unesite neki broj od 1 do 20, imate ' + br_pokusaja + ' pokusaja:'))
-    if (pokusaj === broj){
-        alert('Pogodili ste broj!')
-        break
+// while (true){
+//     pokusaj = parseInt(prompt('Unesite neki broj od 1 do 20, imate ' + br_pokusaja + ' pokusaja:'))
+//     if (pokusaj === broj){
+//         alert('Pogodili ste broj!')
+//         break
+//     }
+//     else if (pokusaj > broj){
+//         br_pokusaja -= 1
+//         if (br_pokusaja === 0){
+//             alert('Ostali ste bez pokusaja, broj je ' + broj)
+//             break
+//         }
+//         alert('Broj je manji od ' + pokusaj + ', imate jos ' + br_pokusaja + ' pokusaja')
+//     }
+//     else if(pokusaj < broj){
+//         br_pokusaja -= 1
+//         if (br_pokusaja === 0){
+//             alert('Ostali ste bez pokusaja, broj je ' + broj)
+//             break
+//         }
+//         alert('Broj je veci od ' + pokusaj + ', imate jos ' + br_pokusaja + ' pokusaja')
+//     }
+// }
+
+
+
+
+
+// const zbir_kvadrata = {
+//     broj1: 2,
+//     broj2: 3,
+//     zbir: function(stepen){
+//         return this.broj1 ** stepen + this.broj2 ** stepen
+//     }
+// }
+
+// eksponent = parseInt(prompt('Unesi stepen:'))
+
+// alert(zbir_kvadrata.zbir(eksponent))
+
+
+
+// name = prompt('Ime').trim()
+// surname = prompt('Prezime').trim()
+
+// osoba = {
+//     ime: name,
+//     prezime: surname,
+//     godine: 18
+// }
+
+// console.log(osoba)
+
+
+
+
+
+// var1 = prompt('Unesi neki broj')
+
+// var2 = ''
+
+// for (i = var1.length; i > 0; i--){
+//     var2 += var1[i]
+// }
+
+// if (var1 == var2){
+//     alert('Rec je palindrom')
+// }
+// else {
+//     alert('Rec nije palindrom')
+// }
+
+
+
+
+num = parseInt(prompt('Unesi broj za koji zelis faktorijal:'))
+
+function factorial(n){
+    if (n <= 1){
+        return 1
     }
-    else if (pokusaj > broj){
-        br_pokusaja -= 1
-        if (br_pokusaja === 0){
-            alert('Ostali ste bez pokusaja, broj je ' + broj)
-            break
-        }
-        alert('Broj je manji od ' + pokusaj + ', imate jos ' + br_pokusaja + ' pokusaja')
-    }
-    else if(pokusaj < broj){
-        br_pokusaja -= 1
-        if (br_pokusaja === 0){
-            alert('Ostali ste bez pokusaja, broj je ' + broj)
-            break
-        }
-        alert('Broj je veci od ' + pokusaj + ', imate jos ' + br_pokusaja + ' pokusaja')
+    else{
+        return n * factorial(n - 1)
     }
 }
+
+alert(factorial(num))
