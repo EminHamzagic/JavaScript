@@ -25,6 +25,22 @@
 
 
 
-var1 = document.getElementsByClassName('Box')
+// var1 = document.getElementsByClassName('Box')
 
-console.log(var1)
+// console.log(var1)
+
+navbar = 0 
+
+function func(){
+    navbar = document.getElementById('nav')
+}
+
+window.onload = func
+
+window.onscroll = function(){
+    if (window.scrollY > 640) {
+        navbar.classList.add('nav_active')
+    } else {
+        navbar.classList.remove('nav_active')
+    }
+} 

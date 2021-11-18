@@ -412,3 +412,11 @@ function factorial(n){
 }
 
 alert(factorial(num))
+
+// result = 1
+
+// for (i = 1; i < num + 1; i++){
+//     result *= i
+// }
+
+// alert(result)
