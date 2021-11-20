@@ -469,8 +469,18 @@
 
 
 
-function Gama(alfa, beta){
-    alert('Treci ugao je ' + (180 - (alfa + beta)))
+// function Gama(alfa, beta){
+//     alert('Treci ugao je ' + (180 - (alfa + beta)))
+// }
+
+// Gama(50, 33)
+
+
+
+
+
+function Watar(time){
+    return Math.floor(time * 0.5)
 }
 
-Gama(50, 33)
+console.log(Watar(4934))
