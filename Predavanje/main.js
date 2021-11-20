@@ -400,18 +400,18 @@
 
 
 
-num = parseInt(prompt('Unesi broj za koji zelis faktorijal:'))
+// num = parseInt(prompt('Unesi broj za koji zelis faktorijal:'))
 
-function factorial(n){
-    if (n <= 1){
-        return 1
-    }
-    else{
-        return n * factorial(n - 1)
-    }
-}
+// function factorial(n){
+//     if (n <= 1){
+//         return 1
+//     }
+//     else{
+//         return n * factorial(n - 1)
+//     }
+// }
 
-alert(factorial(num))
+// alert(factorial(num))
 
 // result = 1
 
@@ -420,3 +420,57 @@ alert(factorial(num))
 // }
 
 // alert(result)
+
+
+
+
+
+// function calculateDogAge(human_age){
+//     return human_age * 7
+// }
+
+// age = parseInt(prompt('Ljudske godine:'))
+
+// alert('Tvoj pas ima ' + calculateDogAge(age) + ' psecih godina')
+
+
+
+
+// function toFahrenhreit(cels){
+//     return (cels * 9 / 5) + 32
+// }
+
+// function toCelsius(farh){
+//     return (farh - 32) * 5 / 9
+// }
+
+// celsius = parseFloat(prompt('Unesite celzijuse:'))
+
+// fahrenheit = parseFloat(prompt('unesite farenhajtove:'))
+
+// alert(celsius + ' celsiusa je ' + toFahrenhreit(celsius) + 'F')
+// alert(fahrenheit + ' farenhajta je ' + toCelsius(fahrenheit) + 'C')
+
+
+
+
+
+// function AgeGap(son_age, father_age){
+//     gap = father_age - son_age
+//     return gap - son_age
+// }
+
+// son = parseInt(prompt('Godine sina:'))
+
+// fother = parseInt(prompt('Godine oca:'))
+
+// alert('Kada je otac bio/bice ' + AgeGap(son, fother))
+
+
+
+
+function Gama(alfa, beta){
+    alert('Treci ugao je ' + (180 - (alfa + beta)))
+}
+
+Gama(50, 33)
