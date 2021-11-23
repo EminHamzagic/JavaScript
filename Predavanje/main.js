@@ -479,8 +479,32 @@
 
 
 
-function Watar(time){
-    return Math.floor(time * 0.5)
-}
+// function Watar(time){
+//     return Math.floor(time * 0.5)
+// }
 
-console.log(Watar(4934))
+// console.log(Watar(4934))
+
+
+
+
+
+// function delioci(n){
+//     if (n < 500000){
+//         dividers = []
+//         for (let i = 1; i <= n; i++){
+//             if (n % i === 0){
+//                 dividers.push(i)
+//             }
+//         }
+//         return dividers
+//     }
+//     else{
+//         return 'Prevelik broj!'
+//     }
+// }
+
+
+// broj = parseInt(prompt('Unesi neki broj:'))
+
+// alert(delioci(broj))
