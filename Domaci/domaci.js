@@ -191,10 +191,40 @@
 
 
 
-function fixer(string){
-    return string[0].toUpperCase() + string.substr(1).toLowerCase()
+// function fixer(string){
+//     return string[0].toUpperCase() + string.substr(1).toLowerCase()
+// }
+
+// str = prompt('Unesite neki string;')
+
+// alert(fixer(str))
+
+
+
+
+
+
+
+sheeps = []
+
+for (let i = 0; i < 20; i++){
+    broj = Math.round(Math.random())
+    if (broj === 1){
+        sheeps.push(true)
+    }
+    else{
+        sheeps.push(false)
+    }
 }
 
-str = prompt('Unesite neki string;')
+function countSheeps(array){
+    brojac = 0
+    for (let x of array){
+        if (x === true){
+            brojac++
+        }
+    }
+    return brojac
+}
 
-alert(fixer(str))
+alert('Ima ' + countSheeps(sheeps) + ' ovaca')
