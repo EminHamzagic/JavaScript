@@ -205,26 +205,49 @@
 
 
 
-sheeps = []
+// sheeps = []
 
-for (let i = 0; i < 20; i++){
-    broj = Math.round(Math.random())
-    if (broj === 1){
-        sheeps.push(true)
+// for (let i = 0; i < 20; i++){
+//     broj = Math.round(Math.random())
+//     if (broj === 1){
+//         sheeps.push(true)
+//     }
+//     else{
+//         sheeps.push(false)
+//     }
+// }
+
+// function countSheeps(array){
+//     brojac = 0
+//     for (let x of array){
+//         if (x === true){
+//             brojac++
+//         }
+//     }
+//     return brojac
+// }
+
+// alert('Ima ' + countSheeps(sheeps) + ' ovaca')
+
+
+
+
+
+function elevatorDistance(array) {
+    let distance = 0
+    for (let i = 0; i < array.length - 1; i++){
+      if (array[i] > array[i + 1]){
+        distance += array[i] - array[i + 1]
+      }
+      else if (array[i] < array[i + 1]){
+        distance += array[i + 1] - array[i]
+      }
+      else{
+        continue
+      }
     }
-    else{
-        sheeps.push(false)
-    }
+    return distance
 }
 
-function countSheeps(array){
-    brojac = 0
-    for (let x of array){
-        if (x === true){
-            brojac++
-        }
-    }
-    return brojac
-}
 
-alert('Ima ' + countSheeps(sheeps) + ' ovaca')
+console.log(elevatorDistance([5, 2, 8]))
