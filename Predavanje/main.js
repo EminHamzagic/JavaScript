@@ -508,3 +508,14 @@
 // broj = parseInt(prompt('Unesi neki broj:'))
 
 // alert(delioci(broj))
+
+
+function double(array){
+    array2 = []
+    for (let x of array){
+        array2.push(x * 2)
+    }
+    return array2
+}
+
+console.log(double([2, 3, 5]))
