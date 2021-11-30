@@ -233,21 +233,100 @@
 
 
 
-function elevatorDistance(array) {
-    let distance = 0
-    for (let i = 0; i < array.length - 1; i++){
-      if (array[i] > array[i + 1]){
-        distance += array[i] - array[i + 1]
-      }
-      else if (array[i] < array[i + 1]){
-        distance += array[i + 1] - array[i]
-      }
-      else{
-        continue
-      }
-    }
-    return distance
+// function elevatorDistance(array) {
+//     let distance = 0
+//     for (let i = 0; i < array.length - 1; i++){
+//       if (array[i] > array[i + 1]){
+//         distance += array[i] - array[i + 1]
+//       }
+//       else if (array[i] < array[i + 1]){
+//         distance += array[i + 1] - array[i]
+//       }
+//       else{
+//         continue
+//       }
+//     }
+//     return distance
+// }
+
+
+// console.log(elevatorDistance([5, 2, 8]))
+
+
+
+//------------------------------------------------------------------------------------
+
+// function fiveAndGreaterOnly(arr) {
+//   new_arr = arr.filter(function (el){
+//     return el >= 5
+//   })
+//   return new_arr
+// }
+
+// console.log(fiveAndGreaterOnly([3, 6, 8, 2]))
+
+
+
+
+// function evensOnly(arr){
+//   new_arr = arr.filter(function (el){
+//     return el % 2 === 0
+//   })
+//   return new_arr
+// }
+
+// console.log(evensOnly([3, 6, 8, 2])); 
+
+
+
+// function fiveCharactersOrFewerOnly(arr) {
+//   new_arr = arr.filter(function (el){
+//     return el.length <= 5 
+//   })
+//   return new_arr
+// }
+// // test
+// console.log(fiveCharactersOrFewerOnly(["dog", "wolf", "by", "family", "eaten", "camping"])); // ["by", "dog", "wolf", "eaten"]
+
+
+
+
+// function peopleWhoBelongToTheIlluminati(arr){
+//   new_arr =  arr.filter(function(el){
+//     return el.member === true
+//   })
+//   return new_arr
+// }
+// // test
+// console.log(peopleWhoBelongToTheIlluminati([
+//     { name: "Angelina Jolie", member: true },
+//     { name: "Eric Jones", member: false },
+//     { name: "Paris Hilton", member: true },
+//     { name: "Kayne West", member: false },
+//     { name: "Bob Ziroll", member: true }
+// ]));
+// // =>
+// //[ { name: 'Angelina Jolie', member: true },
+// //  { name: 'Paris Hilton', member: true },
+// //  { name: 'Bob Ziroll', member: true } ]
+
+
+
+
+function ofAge(arr){
+  new_arr = arr.filter(function(el){
+    return el.age > 18
+  })
+  return new_arr
 }
-
-
-console.log(elevatorDistance([5, 2, 8]))
+// test
+console.log(ofAge([
+    { name: "Angelina Jolie", age: 80 },
+    { name: "Eric Jones", age: 2 },
+    { name: "Paris Hilton", age: 5 },
+    { name: "Kayne West", age: 16 },
+    { name: "Bob Ziroll", age: 100 }
+])); 
+// => 
+//[ { name: 'Angelina Jolie', age: 80 },
+//  { name: 'Bob Ziroll', age: 100 } ]
