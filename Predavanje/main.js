@@ -509,7 +509,6 @@
 
 // alert(delioci(broj))
 
-
 // function double(array){
 //     array2 = []
 //     for (let x of array){
