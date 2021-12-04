@@ -510,12 +510,30 @@
 // alert(delioci(broj))
 
 
-function double(array){
-    array2 = []
-    for (let x of array){
-        array2.push(x * 2)
-    }
-    return array2
-}
+// function double(array){
+//     array2 = []
+//     for (let x of array){
+//         array2.push(x * 2)
+//     }
+//     return array2
+// }
 
-console.log(double([2, 3, 5]))
+// console.log(double([2, 3, 5]))
+
+
+
+// function cost(mins){
+//     return parseInt(mins / 30) * 10 + 20
+//     // return parseInt(mins / 30) * 10 + 20
+// }
+
+// console.log(cost(45))
+
+
+var element = document.getElementById("h1")
+
+element.style.color = 'Aquamarine'
+
+document.getElementById('btn').addEventListener('click', function(){
+    element.style.color = 'Crimson'
+})
