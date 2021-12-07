@@ -529,10 +529,27 @@
 // console.log(cost(45))
 
 
-var element = document.getElementById("h1")
+// var element = document.getElementById("h1")
 
-element.style.color = 'Aquamarine'
+// element.style.color = 'Aquamarine'
 
-document.getElementById('btn').addEventListener('click', function(){
-    element.style.color = 'Crimson'
+// document.getElementById('btn').addEventListener('click', function(){
+//     element.style.color = 'Crimson'
+// })
+
+
+
+
+document.createElement
+
+document.getElementById('h1_btn').addEventListener('click', () => {
+    for (x of document.getElementsByTagName('h1')){
+        x.style.color = 'red';
+    }
+})
+
+document.getElementById('h2_btn').addEventListener('click', () => {
+    for (x of document.getElementsByTagName('h2')){
+        x.style.color = 'blue';
+    }
 })
