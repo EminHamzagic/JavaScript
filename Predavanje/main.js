@@ -540,16 +540,55 @@
 
 
 
-document.createElement
 
-document.getElementById('h1_btn').addEventListener('click', () => {
-    for (x of document.getElementsByTagName('h1')){
-        x.style.color = 'red';
-    }
-})
 
-document.getElementById('h2_btn').addEventListener('click', () => {
-    for (x of document.getElementsByTagName('h2')){
-        x.style.color = 'blue';
-    }
-})
+// document.getElementById('h1_btn').addEventListener('click', () => {
+//     for (x of document.getElementsByTagName('h1')){
+//         x.style.color = 'red';
+//     }
+// })
+
+// document.getElementById('h2_btn').addEventListener('click', () => {
+//     for (x of document.getElementsByTagName('h2')){
+//         x.style.color = 'blue';
+//     }
+// })
+
+
+
+
+// var plus = document.getElementById('+');
+// var minus = document.getElementById('-');
+// var counter = 0
+
+// function addition(num){
+//     counter += num;
+//     document.getElementById('display').innerText = counter;
+// }
+
+// function subtraction(num){
+//     counter -= num;
+//     document.getElementById('display').innerText = counter;
+// }
+
+// document.getElementById('+').addEventListener('click', addition(1));
+// document.getElementById('+5').addEventListener('click', addition(5));
+// document.getElementById('+10').addEventListener('click', addition(10));
+
+// document.getElementById('-').addEventListener('click', subtraction(1));
+// document.getElementById('-5').addEventListener('click', subtraction(5));
+// document.getElementById('-10').addEventListener('click', subtraction(10));
+
+
+
+
+
+lst = ['apple', 'orange', 'banana'];
+
+var ul = document.getElementById('ul');
+
+for (x of lst){
+    var item = document.createElement('li');
+    item.innerText = x;
+    ul.appendChild(item);
+}
