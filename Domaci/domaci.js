@@ -313,20 +313,27 @@
 
 
 
-function ofAge(arr){
-  new_arr = arr.filter(function(el){
-    return el.age > 18
-  })
-  return new_arr
-}
-// test
-console.log(ofAge([
-    { name: "Angelina Jolie", age: 80 },
-    { name: "Eric Jones", age: 2 },
-    { name: "Paris Hilton", age: 5 },
-    { name: "Kayne West", age: 16 },
-    { name: "Bob Ziroll", age: 100 }
-])); 
+// function ofAge(arr){
+//   new_arr = arr.filter(function(el){
+//     return el.age > 18
+//   })
+//   return new_arr
+// }
+// // test
+// console.log(ofAge([
+//     { name: "Angelina Jolie", age: 80 },
+//     { name: "Eric Jones", age: 2 },
+//     { name: "Paris Hilton", age: 5 },
+//     { name: "Kayne West", age: 16 },
+//     { name: "Bob Ziroll", age: 100 }
+// ])); 
 // => 
 //[ { name: 'Angelina Jolie', age: 80 },
 //  { name: 'Bob Ziroll', age: 100 } ]
+
+
+var button = document.getElementsByTagName('btn')
+
+button.addEventListener('click', () => {
+  alert('Imate ' + document.getElementsByTagName('option').length + ' opcija')
+})
