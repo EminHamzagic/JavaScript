@@ -583,12 +583,16 @@
 
 
 
-lst = ['apple', 'orange', 'banana'];
+// lst = ['apple', 'orange', 'banana'];
 
-var ul = document.getElementById('ul');
+// var ul = document.getElementById('ul');
 
-for (x of lst){
-    var item = document.createElement('li');
-    item.innerText = x;
-    ul.appendChild(item);
-}
+// for (x of lst){
+//     var item = document.createElement('li');
+//     item.innerText = x;
+//     ul.appendChild(item);
+// }
+
+
+
+
