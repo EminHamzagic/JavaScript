@@ -596,3 +596,14 @@
 
 
 
+
+function digitize(n){
+    num = n.toString();
+    lst = [];
+    for(let i = 0; i < num.length; i++){
+        lst.push(parseInt(num[i]));
+    }
+    return lst
+}
+
+console.log(digitize(123));
