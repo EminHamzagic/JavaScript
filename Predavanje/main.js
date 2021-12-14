@@ -597,13 +597,32 @@
 
 
 
-function digitize(n){
-    num = n.toString();
-    lst = [];
-    for(let i = 0; i < num.length; i++){
-        lst.push(parseInt(num[i]));
+// function digitize(n){
+//     num = n.toString();
+//     lst = [];
+//     for(let i = 0; i < num.length; i++){
+//         lst.push(parseInt(num[i]));
+//     }
+//     return lst
+// }
+
+// console.log(digitize(123));
+
+
+
+
+function mergeArrays(a, b) {
+    var lst = [];
+    for (let i = 0; i < a.length + b.length; i++){
+        if (i + 1 <= a.length){
+          lst.push(a[i]);
+        }
+        if (i + 1 <= b.length){
+            lst.push(b[i]);
+        }
     }
     return lst
-}
+  }
 
-console.log(digitize(123));
+
+console.log(mergeArrays([1, 2, 3, 4, 5, 6, 7, 8], ['a', 'b', 'c', 'd', 'e']));
