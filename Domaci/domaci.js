@@ -332,8 +332,18 @@
 //  { name: 'Bob Ziroll', age: 100 } ]
 
 
-var button = document.getElementsByTagName('btn')
+// var button = document.getElementsByTagName('btn')
 
-button.addEventListener('click', () => {
-  alert('Imate ' + document.getElementsByTagName('option').length + ' opcija')
-})
+// button.addEventListener('click', () => {
+//   alert('Imate ' + document.getElementsByTagName('option').length + ' opcija')
+// })
+
+
+const imageSrc = 'https://crocoder.dev/icon.png';
+var div = document.getElementById('div');
+
+var img = document.createElement('img');
+
+img.src = imageSrc;
+
+div.appendChild(img);
