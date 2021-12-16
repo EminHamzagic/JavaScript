@@ -611,18 +611,44 @@
 
 
 
-function mergeArrays(a, b) {
-    var lst = [];
-    for (let i = 0; i < a.length + b.length; i++){
-        if (i + 1 <= a.length){
-          lst.push(a[i]);
-        }
-        if (i + 1 <= b.length){
-            lst.push(b[i]);
-        }
+// function mergeArrays(a, b) {
+//     var lst = [];
+//     for (let i = 0; i < a.length + b.length; i++){
+//         if (i + 1 <= a.length){
+//           lst.push(a[i]);
+//         }
+//         if (i + 1 <= b.length){
+//             lst.push(b[i]);
+//         }
+//     }
+//     return lst
+//   }
+
+
+// console.log(mergeArrays([1, 2, 3, 4, 5, 6, 7, 8], ['a', 'b', 'c', 'd', 'e']));
+
+
+
+
+function spongeMeme(sentence) {
+  var counter = 2;
+  var new_sentence = "";
+  for (let i = 0; i < sentence.length; i++){
+    if (counter % 2 === 0){
+      new_sentence += sentence[i].toUpperCase();
+      counter++;
     }
-    return lst
+    else{
+      new_sentence += sentence[i].toLowerCase();
+      counter++;
+    }
   }
+  return new_sentence
+}
 
+sn = "helllo"
 
-console.log(mergeArrays([1, 2, 3, 4, 5, 6, 7, 8], ['a', 'b', 'c', 'd', 'e']));
+console.log(sn[1].toUpperCase());
+// console.log(object);
+
+console.log(spongeMeme("stop Making spongebob Memes!"));
