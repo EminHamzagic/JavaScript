@@ -630,25 +630,51 @@
 
 
 
-function spongeMeme(sentence) {
-  var counter = 2;
-  var new_sentence = "";
-  for (let i = 0; i < sentence.length; i++){
-    if (counter % 2 === 0){
-      new_sentence += sentence[i].toUpperCase();
-      counter++;
-    }
-    else{
-      new_sentence += sentence[i].toLowerCase();
-      counter++;
-    }
-  }
-  return new_sentence
+// function spongeMeme(sentence) {
+//   var counter = 2;
+//   var new_sentence = "";
+//   for (let i = 0; i < sentence.length; i++){
+//     if (counter % 2 === 0){
+//       new_sentence += sentence[i].toUpperCase();
+//       counter++;
+//     }
+//     else{
+//       new_sentence += sentence[i].toLowerCase();
+//       counter++;
+//     }
+//   }
+//   return new_sentence
+// }
+
+// sn = "helllo"
+
+// console.log(sn[1].toUpperCase());
+// // console.log(object);
+
+// console.log(spongeMeme("stop Making spongebob Memes!"));
+
+
+
+
+// var par = document.getElementById('p');
+// click = true;
+
+// par.addEventListener('click', () => {
+//   par.classList.toggle('color');
+// })
+
+
+
+
+var li_num = parseInt(prompt('Unesite broj od 1 do 100:'));
+
+var main_div = document.querySelector('.main');
+
+var list = document.createElement('ul');
+main_div.appendChild(list);
+
+for (let i = 0; i < li_num; i++){
+  let li = document.createElement('li');
+  li.innerHTML = i + 1;
+  list.appendChild(li);
 }
-
-sn = "helllo"
-
-console.log(sn[1].toUpperCase());
-// console.log(object);
-
-console.log(spongeMeme("stop Making spongebob Memes!"));
