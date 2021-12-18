@@ -666,19 +666,21 @@
 
 
 
-for (let i = 0; i < 9; i++){
 
-}
 
-var li_num = parseInt(prompt('Unesite broj od 1 do 100:'));
+// var li_num = parseInt(prompt('Unesite broj od 1 do 100:'));
 
-var main_div = document.querySelector('.main');
+// var main_div = document.querySelector('.main');
 
-var list = document.createElement('ul');
-main_div.appendChild(list);
+// var list = document.createElement('ul');
+// main_div.appendChild(list);
 
-for (let i = 0; i < li_num; i++){
-  let li = document.createElement('li');
-  li.innerHTML = i + 1;
-  list.appendChild(li);
-}
+// for (let i = 0; i < li_num; i++){
+//   let li = document.createElement('li');
+//   li.innerHTML = i + 1;
+//   list.appendChild(li);
+// }
+
+
+
+
