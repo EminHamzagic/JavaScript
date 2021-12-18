@@ -666,6 +666,10 @@
 
 
 
+for (let i = 0; i < 9; i++){
+
+}
+
 var li_num = parseInt(prompt('Unesite broj od 1 do 100:'));
 
 var main_div = document.querySelector('.main');
