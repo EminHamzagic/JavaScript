@@ -684,3 +684,27 @@
 
 
 
+function trouble(x, t){
+    pos = 0;
+    while(true){
+        if ((x[pos] + x[pos + 1]) === t){
+            x.splice(pos + 1, pos + 1);
+            pos = 0;
+            continue
+        }
+        else{
+            return x;
+        }
+        pos++;
+    }
+    // for(var i = 0; i < x.length + 1; i++){
+    //   if (x[i] + x[i + 1] === t){
+    //     x.splice(i + 1, i + 1)
+    //     i = 0;
+    //   }
+    // }
+    // return x;
+}
+
+// console.log(trouble([2, 2, 3, 2, 2, 2], 4));
+console.log(Boolean(-14 > -13));
